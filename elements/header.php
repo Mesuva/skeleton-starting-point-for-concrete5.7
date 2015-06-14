@@ -35,14 +35,12 @@ $editmode = $c->isEditMode();
                     <a href="<?php echo DIR_REL?>/"><?php  echo Config::get('concrete.site'); ?></a>
                 </div>
 
-                <div class="nav_wrapper eight columns">
-                    <nav id="nav">
-                        <?php
-                        $a = new GlobalArea('Navigation');
-                        $a->setBlockLimit(1);
-                        $a->display();
-                        ?>
-                    </nav>
-                </div>
+                <nav class="navigation eight columns">
+                    <?php
+                    $a = new GlobalArea('Navigation');
+                    $a->setBlockLimit(1);
+                    $a->display();
+                    ?>
+                </nav>
             </div>
         </header>
